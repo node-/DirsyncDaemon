@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "C:\Python27\python.exe C:\Users\europaexpts\code\pySyncd\pySyncd.py", 0, True
