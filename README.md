@@ -19,9 +19,10 @@ config file contains line: 'test'
 
 This will sync '\~/source/test' with '\~/target/test'
 
-Finally, for Windows, set the python script path in "pySyncdRunner.vbs"
-
 # Install
-Windows: Run > 'shell:startup'. Add a shortcut to the pySyncdRunner.
+Run the script on startup and pass the target and source directories as arguments.
 
-Linux/OSX: Run the python script on startup.
+For Windows, put a .vbs script with the following line in the startup folder:
+```
+CreateObject("Wscript.Shell").Run "C:\Python27\python.exe pySyncd.py --source <dir> --target <dir>", 0, True
+```
