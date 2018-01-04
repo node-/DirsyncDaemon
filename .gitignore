@@ -1,0 +1,3 @@
+*.vbs
+*.pyc
+s3creds.py
